@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url(./assets/background.jpg);
+    /* background: url(./assets/background_2.jpg); */
+    width: 705px;
+    height: 1004px;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Vollkorn', serif;
+    text-transform: uppercase;
+}
+
+p {
+    color: #494843;
+}
+
+span, li {
+    font-family: 'Didact Gothic', sans-serif;
+    text-transform: capitalize; 
+    color: #ae9d8b;  
+}
+
+.wrapper {
+    position: relative;
+}
+
+/* skills section */
+
+.skills {
+    height: 370px;
+    display: block;
+    width: 185px;
+    position: absolute;
+    top: 27px;
+    left: 39px;
+}
+
+.skill {
+    display: flex;
+}
+
+.skill.offence {
+    margin-left: 9px;
+    margin-top: 11px;
+}
+
+.skill.defence {
+    margin-left: 3px;
+    margin-top: 9px;
+}
+
+.skill.spell_power {
+    margin-left: -11px;
+    margin-top: 22px;
+}
+
+.skill.knowlege {
+    margin-left: 3px;
+    margin-top: 22px;
+}
+
+.skill_name {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 11px;
+}
+
+.skill_name img {
+    position: absolute;
+}
+
+.skill.offence .skill_name img {
+    width: 452px;
+    top: -76px;
+    left: -49px;
+}
+
+.skill.defence .skill_name img {
+    width: 510px;
+    top: -89px;
+    left: -51px;
+}
+
+.skill.spell_power .skill_name img {
+    width: 492px;
+    top: -87px;
+    left: -36px;
+}
+
+.skill.knowlege .skill_name img {
+    width: 488px;
+    top: -89px;
+    left: -153px;
+}
+
+.skill_stage {
+    display: flex;
+    position: relative;
+}
+
+.skill.offence .skill_stage{
+    margin-top: 27px;
+    margin-left: 13px;
+}
+
+.skill.defence .skill_stage{
+    margin-top: 27px;
+    margin-left: 10px;
+}
+
+.skill.spell_power .skill_stage{
+    margin-top: 14px;
+    margin-left: -3px;
+}
+
+.skill.knowlege .skill_stage{
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.skill_step {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    letter-spacing: -0.7px;
+}
+
+.skill_step span:first-of-type {
+    margin-bottom: 19px;
+}
+
+.skill_step-form {
+    left: 36px;
+    position: absolute;
+    top: 3px;
+
+}
+
+.skill_step-lines div {
+    position: absolute;
+}
+
+.skill_step-line-top {
+    left: 8px;
+    top: 8px;
+    border: 1px solid #C9b999;
+    width: 24px;
+}
+
+.skill_step-line-right-container {
+    top: 8px;
+    height: 35.5px;
+    width: 20px;
+    left: 32px;
+    overflow: hidden;
+}
+
+.skill_step-line-right {
+    width: 24px;
+    height: 26px;
+    transform: rotate(62deg) skew(32deg);
+    border: 6px double #C9b999;
+    border-left: none;
+    border-bottom: none;
+    top: 5px;
+    left: -15px;
+}
+
+.skill_step-line-bottom {
+    left: -5px;
+    top: 42px;
+    border: 1px solid #C9b999;
+    width: 37px;
+}
+
+.skill_step-accept {
+    height: 37px;
+    width: 37px;
+    background: white;
+    border: 2px solid #C9b999;
+    border-radius: 50%;
+    top: 6px;
+    position: absolute;
+    left: 51px;
+}
+
+/* skills end section */
+
+/* ability_table section */
+
+.ability_table-wrapper {
+    position: absolute;
+    left: 40px;
+    top: 422px;
+}
+
+.ability_table-header {
+    font-size: 11px;
+    display: flex;
+    border-bottom: 2px solid #C9b999;
+}
+
+.ability_table-header p:first-child {
+    margin-right: 26px;
+    padding-left: 3px;
+}
+
+.ability_table-header p:nth-child(2) {
+    margin-right: 16px;
+}
+
+.ability_table-header p:nth-child(3) {
+    margin-right: 10px;
+}
+
+.ability_table-header p:nth-child(4) {
+    padding-right: 8px;
+}
+
+.ability_table-body {
+    display: flex;
+}
+
+.ability_table-list {
+    margin-top: 8px;
+    /* margin-left: 4px; */
+}
+
+.ability_table-list ol {
+    text-indent: 3px;
+}
+
+.ability_table-list li {
+    font-size: 11px;
+    margin-bottom: 6.3px;
+    letter-spacing: -0.5px;
+    width: max-content;
+}
+
+.ability_table-list li.custom_number {
+    list-style: none;
+}
+
+.ability_table-list li.custom_number::before {
+    content: '20.1';
+    display: inline-block;
+    margin-right: 4px;
+    margin-left: -20px;
+}
+
+.ability_table-list li.custom_number:last-of-type::before {
+    content: '20.2';
+}
+
+.ability_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+}
+
+.ability_table td {
+    border: 2px dotted #C9b999;
+    border-left: none;
+    border-top: none;
+    width: 33%;
+    height: 10px;
+}
+
+.ability_table tr:last-of-type td {
+    border-bottom: none;
+}
+
+/* ability_table end section */
