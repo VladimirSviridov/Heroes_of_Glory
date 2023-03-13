@@ -18,12 +18,14 @@ html {
 
 p {
     color: #494843;
+    font-size: 11px;
 }
 
 span, li {
     font-family: 'Didact Gothic', sans-serif;
     text-transform: capitalize; 
-    color: #ae9d8b;  
+    color: #ae9d8b;
+    font-size: 12px;
 }
 
 .wrapper {
@@ -128,7 +130,6 @@ span, li {
 .skill_step {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
     letter-spacing: -0.7px;
 }
 
@@ -279,3 +280,175 @@ span, li {
 }
 
 /* ability_table end section */
+
+/* spell_book section */
+
+.spell_book {
+    position: absolute;
+    top: 897px;
+    left: 101px;
+}
+
+.spell_book img {
+    position: absolute;
+    display: block;
+    width: 607px;
+    top: -139px;
+    left: -125px;
+}
+
+.spell_book-square {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #C9b999;
+    margin-top: 4px;
+}
+
+/* spell_book end section */
+
+/* user_info section */
+
+.user_info {
+    position: absolute;
+    top: 38px;
+    left: 248px;
+    width: 229px;
+}
+
+.user_info-block {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.user_info-line {
+    border-bottom: 2px solid #C9b999;
+    width: 100%;
+    margin-left: 17px;
+    margin-bottom: 4px;
+}
+
+/* user_info end section */
+
+/* main_stats section */
+
+.main_stats {
+    position: absolute;
+    display: flex;
+    top: 98px;
+    left: 248px;
+}
+
+.main_stats-square {
+    border: 2px solid #C9b999;
+    height: 101px;
+    width: 64px;
+    margin-top: 2px;
+    margin-left: -4px;
+    position: relative;
+}
+
+.main_stats-square-small {
+    border: 2px solid #C9b999;
+    height: 38px;
+    width: 64px;
+    margin-top: 2px;
+    margin-left: -4px;
+    position: relative;
+}
+
+.main_stats span {
+    text-transform: lowercase;
+    position: absolute;
+    font-size: 11px;
+    top: 85px;
+    left: 41px;
+}
+
+.main_stats-line {
+    position: absolute;
+    border-bottom: 2px solid #C9b999;
+    width: 72px;
+    top: 58px;
+    left: -4px;
+    transform: rotateZ(22deg);
+}
+
+.main_stats-block {
+    margin-right: 22px;
+}
+
+.main_stats-block.injuries p {
+    margin-left: 3px;
+}
+
+.main_stats-block.mana p {
+    margin-left: 13px;
+}
+
+/* main_stats end section */
+
+/* person section */
+
+.person {
+    position: absolute;
+    top: 150px;
+    left: 174px;
+}
+
+.person img {
+    width: 321px;
+}
+
+/* person end section */
+
+/* spells section */
+
+.spells {
+    position: absolute;
+    top: 660px;
+    left: 188px;
+    width: 318px;
+}
+
+.spells p {
+    font-size: 14px;
+}
+
+table.spells_table{
+    font-family: 'Didact Gothic', sans-serif;
+    /* font-family: 'helvetica neue',helvetica,arial,'lucida grande',sans-serif; */
+    border-collapse: collapse;
+    font-size: 11px;
+    color: #ae9d8b;
+    margin-top: 6px;
+    margin-left: -2px;
+    letter-spacing: -0.7px;
+}
+table.spells_table td{
+    /* border: solid 1px #C9C9C9; */
+    padding: 0px;
+    font-size: 11px;
+    text-align: center;
+    text-transform: capitalize;
+}
+table.spells_table tr:nth-child(even){
+    background-color: transparent;
+}
+table.spells_table tr:nth-child(odd){
+    background-color: #E7DAD1;
+}
+table.spells_table tr{
+    background-color: #EBEBEB;
+    height: 14px;
+}
+
+table.spells_table tr td:first-of-type {
+    text-align: left;
+    padding-left: 5px;
+}
+
+table.spells_table tr td:not(:last-of-type) {
+    border-right: 2px solid #C9b999;
+}
+
+/* spells end section */
