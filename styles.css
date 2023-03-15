@@ -5,7 +5,7 @@
 
 html {
     background: url(./assets/background.jpg);
-    /* background: url(./assets/background_2.jpg); */
+    background: url(./assets/background_2.jpg);
     width: 705px;
     height: 1004px;
     margin: 0 auto;
@@ -231,6 +231,7 @@ span, li {
 
 .ability_table-list {
     margin-top: 8px;
+    margin-right: 3px;
 }
 
 .ability_table-list ol {
@@ -263,7 +264,7 @@ span, li {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    height: auto;
+    height: 435px;
 }
 
 .ability_table td {
@@ -422,19 +423,26 @@ table.spells_table{
     margin-left: -2px;
     letter-spacing: -0.7px;
 }
+
 table.spells_table td{
-    /* border: solid 1px #C9C9C9; */
     padding: 0px;
     font-size: 11px;
     text-align: center;
     text-transform: capitalize;
 }
+
 table.spells_table tr:nth-child(even){
     background-color: transparent;
 }
+
 table.spells_table tr:nth-child(odd){
     background-color: #E7DAD1;
 }
+
+table.spells_table tr:last-of-type{
+    background-color: #c8beb4;
+}
+
 table.spells_table tr{
     background-color: #EBEBEB;
     height: 14px;
@@ -667,3 +675,55 @@ table.spells_table tr td:not(:last-of-type) {
 }
 
 /* equipment end section */
+
+/* inventory section */
+
+.inventory {
+    position: absolute;
+    top: 653px;
+    left: 518px;
+}
+
+.inventory p {
+    letter-spacing: -0.3px;
+    margin-bottom: 2px;
+}
+
+.inventory_line {
+    border-bottom: 2px solid #C9b999;
+    width: 147px;
+    margin-bottom: 13px;
+}
+
+.inventory_block .inventory_line:last-of-type {
+    margin-bottom: 10px;
+}
+
+.inventory_block.second .inventory_line {
+    margin-bottom: 14px;    
+}
+
+/* inventory end section */
+
+/* gold section */
+
+.gold {
+    position: absolute;
+    top: 917px;
+    left: 519px;
+}
+
+.gold_square {
+    height: 24px;
+    width: 71px;
+    border: 2px solid #C9b999;
+}
+
+.gold img {
+    position: absolute;
+    top: -47px;
+    left: 53px;
+    width: 107px;
+}
+
+/* gold end section */
