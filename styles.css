@@ -5,7 +5,7 @@
 
 html {
     background: url(./assets/background.jpg);
-    /* background: url(./assets/background_2.jpg); */
+    background: url(./assets/background_2.jpg);
     width: 705px;
     height: 1004px;
     margin: 0 auto;
@@ -18,12 +18,14 @@ html {
 
 p {
     color: #494843;
+    font-size: 11px;
 }
 
 span, li {
     font-family: 'Didact Gothic', sans-serif;
     text-transform: capitalize; 
-    color: #ae9d8b;  
+    color: #ae9d8b;
+    font-size: 12px;
 }
 
 .wrapper {
@@ -128,7 +130,6 @@ span, li {
 .skill_step {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
     letter-spacing: -0.7px;
 }
 
@@ -230,7 +231,7 @@ span, li {
 
 .ability_table-list {
     margin-top: 8px;
-    /* margin-left: 4px; */
+    margin-right: 3px;
 }
 
 .ability_table-list ol {
@@ -263,7 +264,7 @@ span, li {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    height: auto;
+    height: 435px;
 }
 
 .ability_table td {
@@ -279,3 +280,450 @@ span, li {
 }
 
 /* ability_table end section */
+
+/* spell_book section */
+
+.spell_book {
+    position: absolute;
+    top: 897px;
+    left: 101px;
+}
+
+.spell_book img {
+    position: absolute;
+    display: block;
+    width: 607px;
+    top: -139px;
+    left: -125px;
+}
+
+.spell_book-square {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #C9b999;
+    margin-top: 4px;
+}
+
+/* spell_book end section */
+
+/* user_info section */
+
+.user_info {
+    position: absolute;
+    top: 38px;
+    left: 248px;
+    width: 229px;
+}
+
+.user_info-block {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.user_info-line {
+    border-bottom: 2px solid #C9b999;
+    width: 100%;
+    margin-left: 17px;
+    margin-bottom: 4px;
+}
+
+/* user_info end section */
+
+/* main_stats section */
+
+.main_stats {
+    position: absolute;
+    display: flex;
+    top: 98px;
+    left: 248px;
+}
+
+.main_stats-square {
+    border: 2px solid #C9b999;
+    height: 101px;
+    width: 64px;
+    margin-top: 2px;
+    margin-left: -4px;
+    position: relative;
+}
+
+.main_stats-square-small {
+    border: 2px solid #C9b999;
+    height: 38px;
+    width: 64px;
+    margin-top: 2px;
+    margin-left: -4px;
+    position: relative;
+}
+
+.main_stats span {
+    text-transform: lowercase;
+    position: absolute;
+    font-size: 11px;
+    top: 85px;
+    left: 41px;
+}
+
+.main_stats-line {
+    position: absolute;
+    border-bottom: 2px solid #C9b999;
+    width: 72px;
+    top: 58px;
+    left: -4px;
+    transform: rotateZ(22deg);
+}
+
+.main_stats-block {
+    margin-right: 22px;
+}
+
+.main_stats-block.injuries p {
+    margin-left: 3px;
+}
+
+.main_stats-block.mana p {
+    margin-left: 13px;
+}
+
+/* main_stats end section */
+
+/* person section */
+
+.person {
+    position: absolute;
+    top: 150px;
+    left: 174px;
+}
+
+.person img {
+    width: 321px;
+}
+
+/* person end section */
+
+/* spells section */
+
+.spells {
+    position: absolute;
+    top: 660px;
+    left: 188px;
+    width: 318px;
+}
+
+.spells p {
+    font-size: 14px;
+}
+
+table.spells_table{
+    font-family: 'Didact Gothic', sans-serif;
+    border-collapse: collapse;
+    font-size: 11px;
+    color: #ae9d8b;
+    margin-top: 6px;
+    margin-left: -2px;
+    letter-spacing: -0.7px;
+}
+
+table.spells_table td{
+    padding: 0px;
+    font-size: 11px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+table.spells_table tr:nth-child(even){
+    background-color: transparent;
+}
+
+table.spells_table tr:nth-child(odd){
+    background-color: #E7DAD1;
+}
+
+table.spells_table tr:last-of-type{
+    background-color: #c8beb4;
+}
+
+table.spells_table tr{
+    background-color: #EBEBEB;
+    height: 14px;
+}
+
+table.spells_table tr td:first-of-type {
+    text-align: left;
+    padding-left: 5px;
+}
+
+table.spells_table tr td:not(:last-of-type) {
+    border-right: 2px solid #C9b999;
+}
+
+/* spells end section */
+
+/* lvl section */
+
+.lvl {    
+    position: absolute;
+    top: -126px;
+    left: 283px;
+}
+
+.lvl img {
+    width: 450px;
+}
+
+.lvl_wrapper {
+    position: absolute;
+    top: 271px;
+    left: 234px;
+    display: flex;
+}
+
+.lvl-block {
+    margin-right: 47px;
+}
+
+.lvl-ring {
+    height: 41px;
+    width: 41px;
+    border: 2px solid #C9b999;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.lvl-square {
+    height: 41px;
+    width: 65px;
+    border: 2px solid #C9b999;
+    margin-top: 5px;
+    margin-left: -19px;
+}
+
+/* lvl end section */
+
+/* speciality section */
+
+.speciality {
+    position: absolute;
+    top: 237px;
+    left: 453px;
+}
+
+.speciality-block {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.speciality-block:last-of-type {
+    margin-left: 41px;  
+}
+
+.speciality-block p {
+    letter-spacing: -0.7px;
+}
+
+.speciality-line {
+    display: block;
+    border-bottom: 2px solid #C9b999;
+    width: 116px;
+    margin-left: 6px;
+    margin-bottom: 4px;
+}
+
+/* speciality end section */
+
+/* equipment section */
+
+.equipment {
+    position: absolute;
+    top: 306px;
+    left: 508px;
+}
+
+.equipment p {
+    text-transform: capitalize;
+    line-height: 12px;
+}
+
+.equipment_elem {
+    margin-bottom: 30px;
+}
+
+.equipment_elem-name {
+    border-bottom: 2px solid #C9b999;
+    width: 146px;
+    padding-left: 11px;
+    margin-bottom: 8px;
+}
+.equipment_elem-point {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #C9b999;
+    position: absolute;
+}
+
+.equipment_elem.helmet .equipment_elem-point {
+    top: -66px;
+    left: -145px;  
+}
+
+.equipment_elem-line {
+    border-bottom: 2px solid #C9b999;
+    position: absolute;
+}
+
+.equipment_elem.helmet .equipment_elem-line {
+    width: 160px;
+    top: -25px;
+    left: -151px;
+    transform: rotateZ(28deg);
+}
+
+.equipment_elem.armor {
+    margin-bottom: 12px;
+}
+
+.equipment_elem.armor .equipment_elem-name {
+    margin-bottom: 9px;
+}
+
+.equipment_elem.armor .equipment_elem-point {
+    top: 3px;
+    left: -145px;  
+}
+
+.equipment_elem.armor .equipment_elem-line {
+    width: 160px;
+    top: 43px;
+    left: -151px;
+    transform: rotateZ(27deg);
+}
+
+.equipment_elem.shield .equipment_elem-point {
+    top: 103px;
+    left: -53px;  
+}
+
+.equipment_elem.shield .equipment_elem-line {
+    width: 50px;
+    top: 118px;
+    left: -48px;
+    transform: rotateZ(25deg);
+}
+
+.equipment_elem.long_range .equipment_elem-point {
+    top: 70px;
+    left: -236px;
+}
+
+.equipment_elem.long_range .equipment_elem-line {
+    width: 260px;
+    top: 130px;
+    left: -247px;
+    transform: rotateZ(26deg);
+}
+
+.equipment_elem.short_range .equipment_elem-point {
+    top: 134px;
+    left: -238px;  
+}
+
+.equipment_elem.short_range .equipment_elem-vert-line {
+    border-left: 2px solid #C9b999;
+    position: absolute;
+    height: 27px;
+    top: 140px;
+    left: -235px;
+}
+
+.equipment_elem.short_range .equipment_elem-line {
+    width: 258px;
+    top: 220px;
+    left: -246px;
+    transform: rotateZ(25deg);
+}
+
+.equipment_elem.shield {
+    margin-bottom: 10px;
+}
+
+.equipment_elem.shield .equipment_elem-name {
+    margin-bottom: 7px;
+}
+
+.equipment_elem.long_range {
+    margin-bottom: 18px;
+}
+
+.equipment_elem.short_range .equipment_elem-name {
+    margin-bottom: 10px;
+}
+
+.equipment_elem.short_range .equipment_elem-bonus {
+    margin-bottom: 9px;
+}
+
+.equipment_elem-bonus {
+    border-bottom: 2px solid #C9b999;
+    margin-left: 52px;
+    line-height: 12px;
+    font-size: 11px;
+    letter-spacing: -0.7px;
+    padding-left: 1px;
+    margin-bottom: 6px;
+}
+
+/* equipment end section */
+
+/* inventory section */
+
+.inventory {
+    position: absolute;
+    top: 653px;
+    left: 518px;
+}
+
+.inventory p {
+    letter-spacing: -0.3px;
+    margin-bottom: 2px;
+}
+
+.inventory_line {
+    border-bottom: 2px solid #C9b999;
+    width: 147px;
+    margin-bottom: 13px;
+}
+
+.inventory_block .inventory_line:last-of-type {
+    margin-bottom: 10px;
+}
+
+.inventory_block.second .inventory_line {
+    margin-bottom: 14px;    
+}
+
+/* inventory end section */
+
+/* gold section */
+
+.gold {
+    position: absolute;
+    top: 917px;
+    left: 519px;
+}
+
+.gold_square {
+    height: 24px;
+    width: 71px;
+    border: 2px solid #C9b999;
+}
+
+.gold img {
+    position: absolute;
+    top: -47px;
+    left: 53px;
+    width: 107px;
+}
+
+/* gold end section */
