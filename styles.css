@@ -231,7 +231,6 @@ span, li {
 
 .ability_table-list {
     margin-top: 8px;
-    /* margin-left: 4px; */
 }
 
 .ability_table-list ol {
@@ -416,7 +415,6 @@ span, li {
 
 table.spells_table{
     font-family: 'Didact Gothic', sans-serif;
-    /* font-family: 'helvetica neue',helvetica,arial,'lucida grande',sans-serif; */
     border-collapse: collapse;
     font-size: 11px;
     color: #ae9d8b;
@@ -452,3 +450,220 @@ table.spells_table tr td:not(:last-of-type) {
 }
 
 /* spells end section */
+
+/* lvl section */
+
+.lvl {    
+    position: absolute;
+    top: -126px;
+    left: 283px;
+}
+
+.lvl img {
+    width: 450px;
+}
+
+.lvl_wrapper {
+    position: absolute;
+    top: 271px;
+    left: 234px;
+    display: flex;
+}
+
+.lvl-block {
+    margin-right: 47px;
+}
+
+.lvl-ring {
+    height: 41px;
+    width: 41px;
+    border: 2px solid #C9b999;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.lvl-square {
+    height: 41px;
+    width: 65px;
+    border: 2px solid #C9b999;
+    margin-top: 5px;
+    margin-left: -19px;
+}
+
+/* lvl end section */
+
+/* speciality section */
+
+.speciality {
+    position: absolute;
+    top: 237px;
+    left: 453px;
+}
+
+.speciality-block {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.speciality-block:last-of-type {
+    margin-left: 41px;  
+}
+
+.speciality-block p {
+    letter-spacing: -0.7px;
+}
+
+.speciality-line {
+    display: block;
+    border-bottom: 2px solid #C9b999;
+    width: 116px;
+    margin-left: 6px;
+    margin-bottom: 4px;
+}
+
+/* speciality end section */
+
+/* equipment section */
+
+.equipment {
+    position: absolute;
+    top: 306px;
+    left: 508px;
+}
+
+.equipment p {
+    text-transform: capitalize;
+    line-height: 12px;
+}
+
+.equipment_elem {
+    margin-bottom: 30px;
+}
+
+.equipment_elem-name {
+    border-bottom: 2px solid #C9b999;
+    width: 146px;
+    padding-left: 11px;
+    margin-bottom: 8px;
+}
+.equipment_elem-point {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #C9b999;
+    position: absolute;
+}
+
+.equipment_elem.helmet .equipment_elem-point {
+    top: -66px;
+    left: -145px;  
+}
+
+.equipment_elem-line {
+    border-bottom: 2px solid #C9b999;
+    position: absolute;
+}
+
+.equipment_elem.helmet .equipment_elem-line {
+    width: 160px;
+    top: -25px;
+    left: -151px;
+    transform: rotateZ(28deg);
+}
+
+.equipment_elem.armor {
+    margin-bottom: 12px;
+}
+
+.equipment_elem.armor .equipment_elem-name {
+    margin-bottom: 9px;
+}
+
+.equipment_elem.armor .equipment_elem-point {
+    top: 3px;
+    left: -145px;  
+}
+
+.equipment_elem.armor .equipment_elem-line {
+    width: 160px;
+    top: 43px;
+    left: -151px;
+    transform: rotateZ(27deg);
+}
+
+.equipment_elem.shield .equipment_elem-point {
+    top: 103px;
+    left: -53px;  
+}
+
+.equipment_elem.shield .equipment_elem-line {
+    width: 50px;
+    top: 118px;
+    left: -48px;
+    transform: rotateZ(25deg);
+}
+
+.equipment_elem.long_range .equipment_elem-point {
+    top: 70px;
+    left: -236px;
+}
+
+.equipment_elem.long_range .equipment_elem-line {
+    width: 260px;
+    top: 130px;
+    left: -247px;
+    transform: rotateZ(26deg);
+}
+
+.equipment_elem.short_range .equipment_elem-point {
+    top: 134px;
+    left: -238px;  
+}
+
+.equipment_elem.short_range .equipment_elem-vert-line {
+    border-left: 2px solid #C9b999;
+    position: absolute;
+    height: 27px;
+    top: 140px;
+    left: -235px;
+}
+
+.equipment_elem.short_range .equipment_elem-line {
+    width: 258px;
+    top: 220px;
+    left: -246px;
+    transform: rotateZ(25deg);
+}
+
+.equipment_elem.shield {
+    margin-bottom: 10px;
+}
+
+.equipment_elem.shield .equipment_elem-name {
+    margin-bottom: 7px;
+}
+
+.equipment_elem.long_range {
+    margin-bottom: 18px;
+}
+
+.equipment_elem.short_range .equipment_elem-name {
+    margin-bottom: 10px;
+}
+
+.equipment_elem.short_range .equipment_elem-bonus {
+    margin-bottom: 9px;
+}
+
+.equipment_elem-bonus {
+    border-bottom: 2px solid #C9b999;
+    margin-left: 52px;
+    line-height: 12px;
+    font-size: 11px;
+    letter-spacing: -0.7px;
+    padding-left: 1px;
+    margin-bottom: 6px;
+}
+
+/* equipment end section */
