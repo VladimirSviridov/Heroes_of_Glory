@@ -32,6 +32,22 @@ span, li {
     position: relative;
 }
 
+input {
+    position: absolute;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+    text-transform: uppercase;
+    color: #494843;
+}
+
+img {
+    z-index: -1;
+}
+
 /* skills section */
 
 .skills {
@@ -181,6 +197,20 @@ span, li {
     width: 37px;
 }
 
+.skill_step-line-top input,
+.skill_step-line-bottom input {
+    top: -15px;
+    left: 0;
+}
+
+.skill_step-line-top input {
+    width: 25px;
+}
+
+.skill_step-line-bottom input {
+    width: 37px;
+}
+
 .skill_step-accept {
     height: 37px;
     width: 37px;
@@ -190,6 +220,14 @@ span, li {
     top: 6px;
     position: absolute;
     left: 51px;
+}
+
+.skill_step-accept input {
+    left: 3px;
+    top: 4px;
+    width: 31px;
+    height: 31px;
+    border-radius: 35%;
 }
 
 /* skills end section */
@@ -273,6 +311,12 @@ span, li {
     border-top: none;
     width: 33%;
     height: 10px;
+    position: relative;
+}
+
+.ability_table td input {
+    top: 2px;
+    width: 18px;
 }
 
 .ability_table tr:last-of-type td {
@@ -304,6 +348,11 @@ span, li {
     margin-top: 4px;
 }
 
+.spell_book-square input{
+    height: 25px;
+    width: 25px;
+}
+
 /* spell_book end section */
 
 /* user_info section */
@@ -325,6 +374,13 @@ span, li {
     width: 100%;
     margin-left: 17px;
     margin-bottom: 4px;
+    position: relative;
+}
+
+.user_info-line input{
+    top: -4px;
+    text-align: left;
+    width: 180px;
 }
 
 /* user_info end section */
@@ -354,6 +410,16 @@ span, li {
     margin-top: 2px;
     margin-left: -4px;
     position: relative;
+}
+
+.main_stats-square input,
+.main_stats-square-small input {
+    width: 64px;
+    height: 38px;
+}
+
+.main_stats-square input.stat-max {
+    bottom: 0;
 }
 
 .main_stats span {
@@ -424,11 +490,30 @@ table.spells_table{
     letter-spacing: -0.7px;
 }
 
-table.spells_table td{
+table.spells_table td {
     padding: 0px;
     font-size: 11px;
     text-align: center;
     text-transform: capitalize;
+    position: relative;
+}
+
+table.spells_table td input {
+    top: 0;
+    left: 0;
+    height: 14px;
+}
+
+table.spells_table td:nth-child(2) input {
+    width: 44px;
+}
+
+table.spells_table td:nth-child(3) input {
+    width: 101px;
+}
+
+table.spells_table td:nth-child(4) input {
+    width: 133px;
 }
 
 table.spells_table tr:nth-child(even){
@@ -489,6 +574,7 @@ table.spells_table tr td:not(:last-of-type) {
     border-radius: 50%;
     margin-top: 5px;
     margin-left: 2px;
+    position: relative;
 }
 
 .lvl-square {
@@ -497,6 +583,20 @@ table.spells_table tr td:not(:last-of-type) {
     border: 2px solid #C9b999;
     margin-top: 5px;
     margin-left: -19px;
+    position: relative;
+}
+
+.lvl-ring input,
+.lvl-square input {
+    height: 41px;
+}
+
+.lvl-ring input {
+    width: 41px;
+}
+
+.lvl-square input {
+    width: 65px;
 }
 
 /* lvl end section */
@@ -528,6 +628,14 @@ table.spells_table tr td:not(:last-of-type) {
     width: 116px;
     margin-left: 6px;
     margin-bottom: 4px;
+    position: relative;
+}
+
+.speciality-line input {
+    top: -4px;
+    left: 0;
+    width: 116px;
+    text-align: left;
 }
 
 /* speciality end section */
@@ -554,7 +662,16 @@ table.spells_table tr td:not(:last-of-type) {
     width: 146px;
     padding-left: 11px;
     margin-bottom: 8px;
+    position: relative;
 }
+
+.equipment_elem-name input {
+    top: -4px;
+    left: 55px;
+    text-align: left;
+    width: 105px;
+}
+
 .equipment_elem-point {
     width: 9px;
     height: 9px;
@@ -624,6 +741,12 @@ table.spells_table tr td:not(:last-of-type) {
     transform: rotateZ(26deg);
 }
 
+.equipment_elem.long_range .equipment_elem-name input,
+.equipment_elem.short_range .equipment_elem-name input {
+    top: 8px;
+    left: 60px;
+}
+
 .equipment_elem.short_range .equipment_elem-point {
     top: 134px;
     left: -238px;  
@@ -672,6 +795,14 @@ table.spells_table tr td:not(:last-of-type) {
     letter-spacing: -0.7px;
     padding-left: 1px;
     margin-bottom: 6px;
+    position: relative;
+}
+
+.equipment_elem-bonus input {
+    top: -2px;
+    left: 32px;
+    width: 75px;
+    text-align: left;
 }
 
 /* equipment end section */
@@ -693,6 +824,13 @@ table.spells_table tr td:not(:last-of-type) {
     border-bottom: 2px solid #C9b999;
     width: 147px;
     margin-bottom: 13px;
+    position: relative;
+}
+
+.inventory_line input {
+    top: -14px;
+    width: 147px;
+    text-align: left;
 }
 
 .inventory_block .inventory_line:last-of-type {
@@ -717,6 +855,12 @@ table.spells_table tr td:not(:last-of-type) {
     height: 24px;
     width: 71px;
     border: 2px solid #C9b999;
+    position: relative;
+}
+
+.gold_square input {
+    width: 71px;
+    height: 24px;
 }
 
 .gold img {
